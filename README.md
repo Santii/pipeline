@@ -28,7 +28,7 @@ Para gravar o resultado em um arquivo externo:
 
 ## SAÍDA DA FERRAMENTA
 
-- [;)] A quantidade de ciclos total para executar as instruções
-- [;)] O estágio que cada instrução se encontra por ciclo
+- [X] A quantidade de ciclos total para executar as instruções
+- [X] O estágio que cada instrução se encontra por ciclo
 
 Programa desenvolvido por _Bianca Santiago_ (*bianca.santiago72@gmail.com*), 2017.1

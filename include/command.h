@@ -1,8 +1,8 @@
 /**
 * @file 	command.h
-* @brief	Arquivo de cabeçalho com a definição da classe Comando
+* @brief	Arquivo de cabecalho com a definicao da classe Comando
 * @author   Bianca Santiago (bianca.santiago72@gmail.com)
-* @since    12/04/2017
+* @since    02/04/2017
 * @date     22/04/2017
 */
 
@@ -22,59 +22,59 @@ using std::string;
 #include <sstream>
 using std::stringstream;
 
-/*! Classe para representar instruções e seus operandos */
+/*! Classe de instrucoes e seus operandos */
 class Comando {
 public:
-    static int estagios;    /**< Define a quantidade de estágios no pipeline */
+    static int estagios;    /**< Define a quantidade de estagios no pipeline */
 
-    int posicao;            /**< Ciclo inicial do comando */
-    string operador;            /**< Tipo do comando (instrução) */
-    string opgravar;         /**< Operando que grava em um registrador */
-    string regist1;           /**< Operando que lê de um registrador */
-    string regist2;           /**< Operando que lê de um registrador */
-    string opextra;         /**< Dados adicionais de um operando */
-    int jump;              /**< Definir salto para uma instrução */
+    int posicao;        /**< Ciclo inicial do comando */
+    string operador;    /**< Tipo do comando */
+    string opgravar;    /**< Operando que grava em um registrador */
+    string regist1;     /**< Operando que lê de um registrador */
+    string regist2;     /**< Operando que lê de um registrador */
+    string operandoext; /**< Dados adicionais de um operando */
+    int jump;           /**< Definir salto para uma instrucao */
     
     /**
-    * @brief     	Inicialização default da classe
+    * @brief Inicializacao default da classe
     */
     Comando();
     
     /**
-    * @brief     	Função que detecta conflito entre dois comandos
-    * @param[in] 	c Comando anterior para referência de conflito
-    * @return    	Retorna true se houve conflito.
-    */
-    bool detConflito(Comando c);
+    * @brief Funcao que verifica há presenca de conflito entre dois comandos
+    * @param cmdant Comando anterior para conferencia de conflito
+    * @return A situacao sobre a presenca de conflito.
+    */  
+    bool verificaConflito(Comando cmdant);
     
     /**
-    * @brief     	Função que imprime na tela um comando
+    * @brief Funcao que imprime cada comando na tela
     */
     void imprimirComando();
 };
 
 /**
-* @brief     	Função que converte uma string em um Comando
-* @param[in] 	s String com o comando e seus operandos
-* @return    	Retorna um Comando com seus atributos
+* @brief Funcao que converte uma string em um Comando para montar o comando no formato do codigo Assembly
+* @param s Conjunto de cada comando e seus operandos
+* @return Comando com seus atributos
 */
 Comando montarComando(string s);
 
 /**
-* @brief     	Função que recebe um vetor de strings e o converte em sequencia de comandos
-* @param[in] 	*linha Vetor de strings à ser convertido
-* @param[in]    qtde Quantidade de elementos no vetor de strings
-* @param[out]   *com Vetor de comandos à ser devolvido sequenciado
-* @return    	Retorna um vetor de inteiros com o total de ciclos na posição 0 e o total de instruções na posição 1
+* @brief Funcao que recebe um vetor de strings e o converte em sequencia de comandos
+* @param *linha Vetor de strings a ser convertido
+* @param quant Quantidade de elementos no vetor de strings
+* @param *codigo Vetor de comandos a ser devolvido sequenciado
+* @return Retorna Vetor de inteiros com o total de ciclos na posicao 0 e o total de instrucoes na posicao 1
 */
-int *sequenciarCodigo(string *linha, int qtde, Comando *com);
+int *sequenciarCodigo(string *linha, int quant, Comando *codigo);
 
 /**
-* @brief     	Função que imprime os ciclos de acordo com uma sequencia de códigos
-* @param[in] 	*totais Vetor de inteiros com o total de ciclos (posição 0) e o total de instruções (posição 1)
-* @param[in]    *com Vetor de Comandos já sequenciados
-* @param[in]    *nomes Vetor de strings com os nomes dos estágios no pipeline
+* @brief Funcao que imprime os ciclos de acordo com uma sequencia de codigos
+* @param *total Vetor de inteiros com o total de ciclos (posicao 0) e o total de instrucoes (posicao 1)
+* @param *codigo Vetor de Comandos ja sequenciados
+* @param *nomesEstagios Vetor de strings com os nomes dos estagios no pipeline
 */
-void imprimirCiclos(int *totais, Comando *com, string *nomes);
+void imprimirResultado(int *total, Comando *codigo, string *nomes);
 
 #endif

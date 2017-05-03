@@ -1,9 +1,10 @@
 /**
 * @file 	arquivos.h
-* @brief	Arquivo de cabeçalho com a definição de funções para a gravação de arquivos
-* @author   Dionísio Carvalho (dionisio@naracosta.com.br)
-* @since    20/04/2017
-* @date     20/04/2017
+* @brief	Arquivo de cabecalho com a definicao de funcoes para a leitura do 
+            arquivo com o codigo Assembly
+* @author   Bianca Santiago (bianca.santiago72@gmail.com)
+* @since    02/04/2017
+* @date     22/04/2017
 */
 
 #ifndef ARQUIVOS_H

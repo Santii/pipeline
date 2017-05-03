@@ -1,9 +1,9 @@
 /**
 * @file 	files.cpp
 * @brief	Arquivo de codigo fonte com a implementacao de funcoes para a leitura do 
-            arquivo com o código Assembly
+            arquivo com o codigo Assembly
 * @author   Bianca Santiago (bianca.santiago72@gmailcom)
-* @since    12/04/2017
+* @since    02/04/2017
 * @date     22/04/2017
 */
 
@@ -28,7 +28,7 @@ bool loadFile(string arquivo, string *comandos, int linhas, string& mensagem) {
     localizacao.clear();
     localizacao.seekg(0);
     
-    for(int i = 0; i < linhas; i++) //Lê o arquivo até antes da linha do total
+    for(int i = 0; i < linhas; i++) //Le o arquivo ate antes da linha do total
         getline(localizacao, comandos[i]);//Lê a linha
         
     localizacao.close();

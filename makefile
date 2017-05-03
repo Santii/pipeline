@@ -25,6 +25,7 @@ SRC_DIR = ./src
 OBJ_DIR = ./build
 BIN_DIR = ./bin
 DOC_DIR = ./doc
+DAT_DIR = ./data
 TEST_DIR = ./test
 
 # Outras variaveis
@@ -77,3 +78,4 @@ $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
 clean:
 	$(RM) $(BIN_DIR)/*.exe
 	$(RM) $(OBJ_DIR)/*.o
+	$(RM) $(DAT_DIR)/output/*.dat

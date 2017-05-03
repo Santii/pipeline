@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Simulador de pipeline: pipeline</title>
+<title>Simulador de pipeline: SIMULADOR DE PIPELINE</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,17 +77,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">pipeline </div>  </div>
+<div class="title">SIMULADOR DE PIPELINE </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Repositório destinado ao primeiro projeto da disciplina de IOAC, com o intuito de realizar o versionamento de um simulador de pipeline de 5 estágios do MIP.</p>
-<p>Para gerar o binários basta executar o comando make no diretório raiz do projeto.</p>
-<p>Automaticamente será gerado o arquivo: ioac.exe dentro da pasta bin.</p>
-<p>O programa sempre considera os saltos sendo executados. Neste caso, o alvo será o número da linha.</p>
-<p>O programa está prédefinido para 5 estágios no pipelines (IF, ID, EX, MEM, WB). Para modificar, basta alterar o main redefinindo-o para a quantidade desejada e nomeando cada estágio.</p>
-<p>A execução do aplicativo deve ser, por exemplo: ./bin/ioac.exe ./data/programa1.asm</p>
-<p>Sendo ./data/programa1.asm o caminho/arquivo que contém a sequência de instruções à ser lida.</p>
-<p>O relatório aparecerá na tela. Caso queira salvá-lo em arquivo, basta executar, por exemplo, ./bin/ioac.exe ./data/programa1.asm &gt; resultado.txt </p>
+<div class="textblock"><h2>Sobre o projeto:</h2>
+<p>Primeiro projeto da disciplina de IOAC, com o intuito de realizar o versionamento de um simulador de pipeline de 5 estágios do MIPS.</p>
+<h2>Como compilar:</h2>
+<p>Para compilar e gerar o executável (binário), no diretório raiz do projeto, execute o comando: </p><pre class="fragment">make
+</pre><p>Isso vai gerar o executável pipeline.exe dentro do diretório bin.</p>
+<h2>Como executar:</h2>
+<p>A execução do programa, DEVE seguir uma das seguintes diretivas: Para imprimir o resultado na tela: ./bin/pipeline.exe ./data/input/codigo.dat Para gravar o resultado em um arquivo externo: ./bin/pipeline.exe ./data/input/codigo.dat &gt; ./data/output/resultado.dat</p>
+<h2>SAÍDA DA FERRAMENTA</h2>
+<ul>
+<li>[;)] A quantidade de ciclos total para executar as instruções</li>
+<li>[;)] O estágio que cada instrução se encontra por ciclo</li>
+</ul>
+<p>Programa desenvolvido por <em>Bianca Santiago</em> (*bianca<a href="#" onclick="location.href='mai'+'lto:'+'.sa'+'nt'+'iag'+'o7'+'2@g'+'ma'+'il.'+'co'+'m'; return false;">.sant<span style="display: none;">.nosp@m.</span>iago<span style="display: none;">.nosp@m.</span>72@gm<span style="display: none;">.nosp@m.</span>ail.<span style="display: none;">.nosp@m.</span>com</a>*), 2017.1 </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

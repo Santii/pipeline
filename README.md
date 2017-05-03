@@ -1,17 +1,29 @@
-# pipeline
-Repositório destinado ao primeiro projeto da disciplina de IOAC, com o intuito de realizar o versionamento de um simulador de pipeline de 5 estágios do MIP. 
+# SIMULADOR DE PIPELINE
 
-Para gerar o binários basta executar o comando make no diretório raiz do projeto.
 
-Automaticamente será gerado o arquivo: ioac.exe dentro da pasta bin.
+## Sobre o projeto:
 
-O programa sempre considera os saltos sendo executados. Neste caso, o alvo será o número da linha.
+Primeiro projeto da disciplina de IOAC, com o intuito de realizar o versionamento de um simulador de pipeline de 5 estágios do MIPS.
+        
+        
+## Como compilar:
 
-O programa está prédefinido para 5 estágios no pipelines (IF, ID, EX, MEM, WB). Para modificar, basta 
-alterar o main redefinindo-o para a quantidade desejada e nomeando cada estágio.
+Para compilar e gerar o executável (binário), no diretório raiz do projeto, execute o comando:
 
-A execução do aplicativo deve ser, por exemplo: ./bin/ioac.exe ./data/programa1.asm
+    make
 
-Sendo ./data/programa1.asm o caminho/arquivo que contém a sequência de instruções à ser lida.
+Isso vai gerar o executável pipeline.exe dentro do diretório bin.
 
-O relatório aparecerá na tela. Caso queira salvá-lo em arquivo, basta executar, por exemplo, ./bin/ioac.exe ./data/programa1.asm > resultado.txt
+## Como executar:
+    
+
+A execução do programa, DEVE seguir uma das seguintes diretivas: 
+Para imprimir o resultado na tela: ./bin/pipeline.exe ./data/input/codigo.dat
+Para gravar o resultado em um arquivo externo: ./bin/pipeline.exe ./data/input/codigo.dat > ./data/output/resultado.dat
+
+## SAÍDA DA FERRAMENTA
+
+- [;)] A quantidade de ciclos total para executar as instruções
+- [;)] O estágio que cada instrução se encontra por ciclo
+
+Programa desenvolvido por _Bianca Santiago_ (*bianca.santiago72@gmail.com*), 2017.1

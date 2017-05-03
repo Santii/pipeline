@@ -16,10 +16,15 @@ Isso vai gerar o executável pipeline.exe dentro do diretório bin.
 
 ## Como executar:
     
-
 A execução do programa, DEVE seguir uma das seguintes diretivas: 
-Para imprimir o resultado na tela: ./bin/pipeline.exe ./data/input/codigo.dat
-Para gravar o resultado em um arquivo externo: ./bin/pipeline.exe ./data/input/codigo.dat > ./data/output/resultado.dat
+
+Para imprimir o resultado na tela.
+
+        ./bin/pipeline.exe ./data/input/codigo.dat
+
+Para gravar o resultado em um arquivo externo: 
+        
+        ./bin/pipeline.exe ./data/input/codigo.dat > ./data/output/resultado.dat
 
 ## SAÍDA DA FERRAMENTA
 

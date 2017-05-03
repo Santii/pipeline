@@ -43,8 +43,8 @@ debug: CFLAGS += -g -O0
 debug: pipeline
 
 # Alvo (target) para a construcao do executavel pipeline.exe
-# Define os arquivos command.o, files.o e main.o como dependencias
-pipeline: $(OBJ_DIR)/command.o $(OBJ_DIR)/files.o $(OBJ_DIR)/main.o
+# Define os arquivos instruction.o, files.o e main.o como dependencias
+pipeline: $(OBJ_DIR)/instruction.o $(OBJ_DIR)/files.o $(OBJ_DIR)/main.o
 	@echo "============="
 	@echo "Ligando o alvo $@"
 	@echo "============="
@@ -52,9 +52,9 @@ pipeline: $(OBJ_DIR)/command.o $(OBJ_DIR)/files.o $(OBJ_DIR)/main.o
 	@echo "+++ [Executavel pipeline.exe criado em $(BIN_DIR)] +++"
 	@echo "============="
 
-# Alvo (target) para a construcao do objeto command.o
-# Define os arquivos command.cpp e command.h como dependencias.
-$(OBJ_DIR)/command.o: $(SRC_DIR)/command.cpp $(INC_DIR)/command.h
+# Alvo (target) para a construcao do objeto instruction.o
+# Define os arquivos instruction.cpp e instruction.h como dependencias.
+$(OBJ_DIR)/instruction.o: $(SRC_DIR)/instruction.cpp $(INC_DIR)/instruction.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 # Alvo (target) para a construcao do objeto files.o

@@ -7,9 +7,9 @@
 */
 
 #include "files.h"
-#include "command.h"
+#include "instruction.h"
 
-int Comando::estagios = 5; /**< Define a quantidade de estágios do pipeline */
+int Instrucao::estagios = 5; /**< Define a quantidade de estágios do pipeline */
 
 /**
 * @brief Funcao principal do programa
@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
     }
 
     //Definindo o nome de cada estagio do pipeline
-    string *estagio = new string[Comando::estagios];
+    string *estagio = new string[Instrucao::estagios];
     estagio[0] = "IF";
     estagio[1] = "ID";
     estagio[2] = "EX";
@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
     }
 
     //Sequencia o código (considerando os saltos) e definindo os conflitos
-    Comando *codigo = new Comando[quant];
+    Instrucao *codigo = new Instrucao[quant];
     int *total = sequenciarCodigo(linha, quant, codigo);
 
     //Imprime o relatório de ciclos

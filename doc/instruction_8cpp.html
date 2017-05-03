@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Simulador de pipeline: Referência do Arquivo src/command.cpp</title>
+<title>Simulador de pipeline: Referência do Arquivo src/instruction.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,40 +89,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
   <div class="summary">
 <a href="#func-members">Funções</a>  </div>
   <div class="headertitle">
-<div class="title">Referência do Arquivo command.cpp</div>  </div>
+<div class="title">Referência do Arquivo instruction.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Arquivo de código fonte com a implementacao da classe <a class="el" href="classComando.html">Comando</a>.  
+<p>Arquivo de código fonte com a implementacao da classe <a class="el" href="classInstrucao.html">Instrucao</a>.  
 <a href="#details">Mais...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="command_8h_source.html">command.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="instruction_8h_source.html">instruction.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Gráfico de dependência de inclusões para command.cpp:</div>
+Gráfico de dependência de inclusões para instruction.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="command_8cpp__incl.png" border="0" usemap="#src_2command_8cpp" alt=""/></div>
-<map name="src_2command_8cpp" id="src_2command_8cpp">
+<div class="center"><img src="instruction_8cpp__incl.png" border="0" usemap="#src_2instruction_8cpp" alt=""/></div>
+<map name="src_2instruction_8cpp" id="src_2instruction_8cpp">
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funções</h2></td></tr>
-<tr class="memitem:afdbbcd487c7d6c4d20f11cb920df41e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComando.html">Comando</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8cpp.html#afdbbcd487c7d6c4d20f11cb920df41e9">montarComando</a> (string s)</td></tr>
-<tr class="memdesc:afdbbcd487c7d6c4d20f11cb920df41e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao que converte uma string em um <a class="el" href="classComando.html">Comando</a> para montar o comando no formato do codigo Assembly.  <a href="#afdbbcd487c7d6c4d20f11cb920df41e9">Mais...</a><br /></td></tr>
-<tr class="separator:afdbbcd487c7d6c4d20f11cb920df41e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43b53986dfcab9c192086f2f31e94cfe"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8cpp.html#a43b53986dfcab9c192086f2f31e94cfe">sequenciarCodigo</a> (string *linha, int quant, <a class="el" href="classComando.html">Comando</a> *codigo)</td></tr>
-<tr class="memdesc:a43b53986dfcab9c192086f2f31e94cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao que recebe um vetor de strings e o converte em sequencia de comandos.  <a href="#a43b53986dfcab9c192086f2f31e94cfe">Mais...</a><br /></td></tr>
-<tr class="separator:a43b53986dfcab9c192086f2f31e94cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca04c03dcc65979344f36e0345ec826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8cpp.html#a0ca04c03dcc65979344f36e0345ec826">imprimirResultado</a> (int *total, <a class="el" href="classComando.html">Comando</a> *codigo, string *nomesEstagios)</td></tr>
-<tr class="memdesc:a0ca04c03dcc65979344f36e0345ec826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao que imprime os ciclos de acordo com uma sequencia de codigos.  <a href="#a0ca04c03dcc65979344f36e0345ec826">Mais...</a><br /></td></tr>
-<tr class="separator:a0ca04c03dcc65979344f36e0345ec826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f6706ddc7f21f3272c08d43fb38cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInstrucao.html">Instrucao</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instruction_8cpp.html#a00f6706ddc7f21f3272c08d43fb38cc2">montarInstrucao</a> (string s)</td></tr>
+<tr class="memdesc:a00f6706ddc7f21f3272c08d43fb38cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao que converte uma string em uma <a class="el" href="classInstrucao.html">Instrucao</a> para montar a instrucao no formato do codigo Assembly.  <a href="#a00f6706ddc7f21f3272c08d43fb38cc2">Mais...</a><br /></td></tr>
+<tr class="separator:a00f6706ddc7f21f3272c08d43fb38cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4342ac9728d60b51f364e2f2e4de54cb"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instruction_8cpp.html#a4342ac9728d60b51f364e2f2e4de54cb">sequenciarCodigo</a> (string *linha, int quant, <a class="el" href="classInstrucao.html">Instrucao</a> *codigo)</td></tr>
+<tr class="memdesc:a4342ac9728d60b51f364e2f2e4de54cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao que recebe um vetor de strings e o converte em sequencia de instrucoes.  <a href="#a4342ac9728d60b51f364e2f2e4de54cb">Mais...</a><br /></td></tr>
+<tr class="separator:a4342ac9728d60b51f364e2f2e4de54cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8062c06f6c043c3443ebd8bdc1e73235"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instruction_8cpp.html#a8062c06f6c043c3443ebd8bdc1e73235">imprimirResultado</a> (int *total, <a class="el" href="classInstrucao.html">Instrucao</a> *codigo, string *nomesEstagios)</td></tr>
+<tr class="memdesc:a8062c06f6c043c3443ebd8bdc1e73235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao que imprime os ciclos de acordo com uma sequencia de codigos.  <a href="#a8062c06f6c043c3443ebd8bdc1e73235">Mais...</a><br /></td></tr>
+<tr class="separator:a8062c06f6c043c3443ebd8bdc1e73235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
-<div class="textblock"><p>Arquivo de código fonte com a implementacao da classe <a class="el" href="classComando.html">Comando</a>. </p>
+<div class="textblock"><p>Arquivo de código fonte com a implementacao da classe <a class="el" href="classInstrucao.html">Instrucao</a>. </p>
 <dl class="section author"><dt>Autor</dt><dd>Bianca Santiago (<a href="#" onclick="location.href='mai'+'lto:'+'bia'+'nc'+'a.s'+'an'+'tia'+'go'+'72@'+'gm'+'ail'+'.c'+'om'; return false;">bianc<span style="display: none;">.nosp@m.</span>a.sa<span style="display: none;">.nosp@m.</span>ntiag<span style="display: none;">.nosp@m.</span>o72@<span style="display: none;">.nosp@m.</span>gmail<span style="display: none;">.nosp@m.</span>.com</a>) </dd></dl>
 <dl class="section since"><dt>Desde</dt><dd>02/04/2017 </dd></dl>
 <dl class="section date"><dt>Data</dt><dd>22/04/2017 </dd></dl>
 </div><h2 class="groupheader">Funções</h2>
-<a class="anchor" id="a0ca04c03dcc65979344f36e0345ec826"></a>
+<a class="anchor" id="a8062c06f6c043c3443ebd8bdc1e73235"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -135,7 +135,7 @@ Funções</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classComando.html">Comando</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classInstrucao.html">Instrucao</a> *&#160;</td>
           <td class="paramname"><em>codigo</em>, </td>
         </tr>
         <tr>
@@ -156,7 +156,7 @@ Funções</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">*total</td><td>Vetor de inteiros com o total de ciclos (posicao 0) e o total de instrucoes (posicao 1) </td></tr>
-    <tr><td class="paramname">*codigo</td><td>Vetor de Comandos ja sequenciados </td></tr>
+    <tr><td class="paramname">*codigo</td><td>Vetor de instrucoes ja sequenciados </td></tr>
     <tr><td class="paramname">*nomesEstagios</td><td>Vetor de strings com os nomes dos estagios no pipeline </td></tr>
   </table>
   </dd>
@@ -164,12 +164,12 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afdbbcd487c7d6c4d20f11cb920df41e9"></a>
+<a class="anchor" id="a00f6706ddc7f21f3272c08d43fb38cc2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classComando.html">Comando</a> montarComando </td>
+          <td class="memname"><a class="el" href="classInstrucao.html">Instrucao</a> montarInstrucao </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -178,19 +178,20 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funcao que converte uma string em um <a class="el" href="classComando.html">Comando</a> para montar o comando no formato do codigo Assembly. </p>
+<p>Funcao que converte uma string em uma <a class="el" href="classInstrucao.html">Instrucao</a> para montar a instrucao no formato do codigo Assembly. </p>
+<p>Funcao que converte uma string em uma Instrução para montar a instrução no formato do codigo Assembly.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Conjunto de cada comando e seus operandos </td></tr>
+    <tr><td class="paramname">s</td><td>Conjunto de cada instrucao e seus operandos </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="classComando.html">Comando</a> com seus atributos </dd></dl>
-<p>&lt; Em caso de lw o operandoext (extra) eh o adicional de memoria. Por exemplo.: o 4 no comando lw $t1, 4($s0) </p>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="classInstrucao.html">Instrucao</a> com seus atributos </dd></dl>
+<p>&lt; Em caso de lw o operandoext (extra) eh o adicional de memoria. Por exemplo.: o 4 na instrucao lw $t1, 4($s0) </p>
 
 </div>
 </div>
-<a class="anchor" id="a43b53986dfcab9c192086f2f31e94cfe"></a>
+<a class="anchor" id="a4342ac9728d60b51f364e2f2e4de54cb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -209,7 +210,7 @@ Funções</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classComando.html">Comando</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classInstrucao.html">Instrucao</a> *&#160;</td>
           <td class="paramname"><em>codigo</em>&#160;</td>
         </tr>
         <tr>
@@ -220,12 +221,13 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funcao que recebe um vetor de strings e o converte em sequencia de comandos. </p>
+<p>Funcao que recebe um vetor de strings e o converte em sequencia de instrucoes. </p>
+<p>Funcao que recebe um vetor de strings e o converte em sequencia de instruções.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">*linha</td><td>Vetor de strings a ser convertido </td></tr>
     <tr><td class="paramname">quant</td><td>Quantidade de elementos no vetor de strings </td></tr>
-    <tr><td class="paramname">*codigo</td><td>Vetor de comandos a ser devolvido sequenciado </td></tr>
+    <tr><td class="paramname">*codigo</td><td>Vetor de instrucoes a ser devolvido sequenciado </td></tr>
   </table>
   </dd>
 </dl>

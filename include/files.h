@@ -23,7 +23,7 @@ using std::string;
 using std::ifstream;
 using std::ofstream;
 
-#include "command.h"
+#include "instruction.h"
 
 /**
 * @brief Funcao que carrega o arquivo com o codigo Assembly

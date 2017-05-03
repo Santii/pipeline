@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readfile',['readFile',['../files_8cpp.html#ad9a4471385ae57edfaa536a96cd35a0a',1,'files.cpp']]],
-  ['regist1',['regist1',['../classComando.html#a5b0c7ac53649806bc30a1431f9c07534',1,'Comando']]],
-  ['regist2',['regist2',['../classComando.html#a217348a65483ff7eee110f7d255b2a8b',1,'Comando']]]
+  ['simulador_20de_20pipeline',['SIMULADOR DE PIPELINE',['../md_README.html',1,'']]],
+  ['sequenciarcodigo',['sequenciarCodigo',['../instruction_8h.html#a4342ac9728d60b51f364e2f2e4de54cb',1,'sequenciarCodigo(string *linha, int quant, Instrucao *codigo):&#160;instruction.cpp'],['../instruction_8cpp.html#a4342ac9728d60b51f364e2f2e4de54cb',1,'sequenciarCodigo(string *linha, int quant, Instrucao *codigo):&#160;instruction.cpp']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['regist1',['regist1',['../classComando.html#a5b0c7ac53649806bc30a1431f9c07534',1,'Comando']]],
-  ['regist2',['regist2',['../classComando.html#a217348a65483ff7eee110f7d255b2a8b',1,'Comando']]]
+  ['regist1',['regist1',['../classInstrucao.html#ab013f9f9cc24d767a20ae843b439dcf2',1,'Instrucao']]],
+  ['regist2',['regist2',['../classInstrucao.html#a5137ce35c18a666718588c8e6f0eb050',1,'Instrucao']]]
 ];

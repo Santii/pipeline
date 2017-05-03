@@ -12,7 +12,7 @@ digraph "src/main.cpp"
   Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="fstream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="command.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$command_8h.html",tooltip="Arquivo de cabecalho com a definicao da classe Comando. "];
+  Node6 [label="instruction.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$instruction_8h.html",tooltip="Arquivo de cabecalho com a definicao da classe Instruction. "];
   Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];

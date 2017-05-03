@@ -3,7 +3,7 @@
 
 ## Sobre o projeto:
 
-Primeiro projeto da disciplina de IOAC, com o intuito de realizar o versionamento de um simulador de pipeline de 5 estágios do MIPS.
+Primeiro projeto da disciplina de IOAC: implementar um simulador de pipeline de 5 estágios do MIPS.
         
         
 ## Como compilar:

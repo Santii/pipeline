@@ -22,8 +22,8 @@ int main(int argc, char* argv[]) {
     if(argc < 2) {
         cout << "##################################################################################################################################" << endl;
         cout << "Por favor, execute novamente e informe a localização do arquivo, conforme mostrado abaixo:" << endl;
-        cout << "1) Impressão na tela:    ./bin/pipeline.exe ./data/exemplo.dat" << endl;
-        cout << "2) Impressão em arquivo: ./bin/pipeline.exe ./data/exemplo.dat > ./data/output/resultado.dat" << endl;
+        cout << "1) Impressão na tela:    ./bin/pipeline.exe ./data/input/codigo.dat" << endl;
+        cout << "2) Impressão em arquivo: ./bin/pipeline.exe ./data/input/codigo.dat > ./data/output/resultado.dat" << endl;
         cout << "Para o caso 2, o arquivo será gerado no diretório ./data/output/. E o nome fica a seu critério, 'resultado' é apenas uma sugestão" << endl;
         cout << "##################################################################################################################################" << endl;
 

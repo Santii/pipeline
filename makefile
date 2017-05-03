@@ -1,5 +1,5 @@
 # Makefile para "Simulador de pipeline com 5 estagios do MIPS" 
-# Criado por Bianca Cristiane Ferreira Santiago
+# Criado por Bianca Santiago
 #
 # Makefile, separando os diferentes elementos da aplicacao
 # como codigo (src), cabecalhos (include), executaveis (build), bibliotecas (lib), etc.
@@ -69,9 +69,9 @@ $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
 
 # Alvo (target) para a geração automatica de documentacao usando o Doxygen.
 # Sempre remove a documentacao anterior (caso exista) e gera uma nova.
-#doxy:
-#	$(RM) $(DOC_DIR)/*
-#	doxygen Doxyfile
+doxy:
+	$(RM) $(DOC_DIR)/*
+	doxygen Doxyfile
 
 # Alvo (target) usado para limpar os arquivos temporarios (objeto)
 # gerados durante a compilacao, assim como os arquivos binarios/executaveis.

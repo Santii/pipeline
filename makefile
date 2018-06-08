@@ -69,9 +69,9 @@ $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
 
 # Alvo (target) para a geração automatica de documentacao usando o Doxygen.
 # Sempre remove a documentacao anterior (caso exista) e gera uma nova.
-doxy:
-	$(RM) $(DOC_DIR)/*
-	doxygen Doxyfile
+#doxy:
+#	$(RM) $(DOC_DIR)/*
+#	doxygen Doxyfile
 
 # Alvo (target) usado para limpar os arquivos temporarios (objeto)
 # gerados durante a compilacao, assim como os arquivos binarios/executaveis.

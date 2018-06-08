@@ -10,7 +10,7 @@ Primeiro projeto da disciplina de IOAC: implementar um simulador de pipeline de 
 
 Para compilar e gerar o executável (binário), no diretório raiz do projeto, execute o comando:
 
-    make
+        make
 
 Isso vai gerar o executável pipeline.exe dentro do diretório bin.
 
